@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>Pilih Warna Background</p>
+
+  <select id="mySelect" onchange="myFunction()">
+    <option value="red">Merah</option>
+    <option value="blue">Biru</option>
+    <option value="yellow">Kuning</option>
+    <option value="white">Putih</option>
+
+    <p>Saat Kamu Memilih Warna, Background Akan Berubah</p>
+  </select>
+
+  <script type="text/javascript">
+    function myFunction(){
+      var a = document.getElementById("mySelect").value;
+      if (a === "red") document.body.style.backgroundColor = "red";
+      else if (a === "blue") document.body.style.backgroundColor = "blue";
+      else if (a === "yellow") document.body.style.backgroundColor = "yellow";
+      else if (a === "white") document.body.style.backgroundColor = "white";
+    }
+  </script>
+</body>
+</html>
